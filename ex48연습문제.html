@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>마우스클릭 연습문제</title>
+    <script>
+    //DM으로 제출하시오.
+    //연습문제
+    //버튼A가 클릭될때, count-a에 카운트를 올리시오.
+    //버튼B가 클릭될때, count-b에 카운트를 올리시오.
+    //힌트: span태그의 카운트를 읽어서 +1을 하시오.
+    //      Number(counterA.innerHTML)
+    window.onload= function(){
+        var button = document.querySelector('#button-a');
+        var count = document.querySelector('#counter-a');
+        
+        button.onclick = function(){
+            count.innerHTML = Number(count.innerHTML)+1;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <button id="button-a">ButtonA</button>
+    <button id="button-b">ButtonB</button>
+    <h1>Button A - <span id="counter-a">7</span></h1>
+    <h1>Button B - <span id="counter-b">0</span></h1>
+</body>
+
+</html>
